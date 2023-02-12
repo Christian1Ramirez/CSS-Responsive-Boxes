@@ -15,9 +15,11 @@ body {
     min-width: 100%;
   }
   .a, .c {
+    flex-wrap: wrap;
     min-height: 15vh;
   }
   .b {
+    flex-wrap: wrap;
     min-height: 65vh;
   }
 
@@ -26,22 +28,22 @@ body {
       flex-direction: row;
       flex-wrap: wrap;
     }
-    .a {
-      min-width: 100%;
-      min-height: 28vh;
-    }
-    .b {
-      justify-content: space-between;
-      flex-direction: row;
-      min-width: 170vh;
+
+    .a, .b, .c {
       margin: 1em;
+    }    
+
+    .a {
+      min-width: 98%;
     }
+
+     .b {
+      flex-grow: 1;
+      max-height: 85vh;
+     }
   
     .c {
-      justify-content: space-between;
-      flex-direction: row;
-      min-width: 15vh;
-      margin: 1em;
-    }
+      min-width: 25vh;
+    } 
   }
 

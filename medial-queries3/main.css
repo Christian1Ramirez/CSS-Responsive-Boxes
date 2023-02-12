@@ -32,11 +32,11 @@ aside {
   display: flex;
   flex-wrap: wrap;
   flex-grow: 1;
+  gap: 1rem;
 }
 
 aside > div {
-  min-width: 28.5%;
-  margin: 2vw;
+  min-width: 47%;
 }
 
 footer {
@@ -46,17 +46,18 @@ footer {
 }
 
 @media (min-width: 1099px) {
-  .wrapper {
+  .wrap {
     flex-direction: row;
   }
   aside {
     width: 80%;
     flex: 4;
     align-items: center;
-    margin-right: 1em;
+    margin: 1em;
+    flex: 3;
   }
   aside > div {
-    height: 10em;
+    height: 40rem;
   }
 
   main {
